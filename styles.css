@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    /* background-color: #2ed0e6 */
+  }
+  /* body{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background-color: skyblue;
+    color: black;
+
+  } */
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+  
+  a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .links{
+    width: auto;
+    list-style: none;
+    padding-top: 8px;
+  }
+  
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    width: 100%;
+    /* height :100vh; */
+    background-color: #0f454d;
+    color: white;
+  }
+  
+  .form-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input-row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .gender-row{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .gender-row input{
+    margin-left: 10px ;
+  }
+  
+  .errorMessage{
+    color: red;
+  }
+  
+  .successMessage{
+    color: green;
+  }
+  
+  
+  /*Sidebar*/
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: gray;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #2ed0e6;
+    color: white;
+  }
+  
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #0f454d;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
